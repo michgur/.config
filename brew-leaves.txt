@@ -46,3 +46,16 @@ webp
 zig
 zsh-vi-mode
 koekeishiya/formulae/yabai
+alt-tab
+dbeaver-community
+docker
+hammerspoon
+hiddenbar
+iina
+maccy
+mactex-no-gui
+raycast
+scroll-reverser
+wezterm
+xquartz
+zed
