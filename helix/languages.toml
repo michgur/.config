@@ -1,0 +1,17 @@
+[language-server.pylsp.config.pylsp]
+plugins.ruff.enabled = true
+plugins.black.enabled = true
+
+[language-server.my_ls]
+command = "python3"
+args = ['tests.py']
+config = {}
+environment = {}
+
+[[language]]
+name = "poop"
+scope = "source.poo"
+file-types = ["poo"]
+comment-tokens = "#"
+indent = { tab-width = 2, unit = "  " }
+language-servers = [ "my_ls" ]
