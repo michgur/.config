@@ -1,0 +1,57 @@
+return {
+  -- "rose-pine/neovim",
+  -- name = "rose-pine",
+  -- config = function()
+  --   require("rose-pine").setup({
+  --     variant = "auto",
+  --     dark_variant = "moon",
+  --     extend_background_behind_borders = false,
+  --     styles = {
+  --       bold = true,
+  --       italic = true,
+  --       transparency = true,
+  --     },
+  --     -- {
+  --     --   _nc = "#f8f0e7",
+  --     --   base = "#faf4ed",
+  --     --   foam = "#56949f",
+  --     --   gold = "#ea9d34",
+  --     --   highlight_high = "#cecacd",
+  --     --   highlight_low = "#f4ede8",
+  --     --   highlight_med = "#dfdad9",
+  --     --   iris = "#907aa9",
+  --     --   leaf = "#6d8f89",
+  --     --   love = "#b4637a",
+  --     --   muted = "#9893a5",
+  --     --   none = "NONE",
+  --     --   overlay = "#f2e9e1",
+  --     --   pine = "#286983",
+  --     --   rose = "#d7827e",
+  --     --   subtle = "#797593",
+  --     --   surface = "#fffaf3",
+  --     --   text = "#575279"
+  --     -- }
+  --
+  --     highlight_groups = {
+  --       TelescopeMatching = { fg = "rose" },
+  --       TelescopeSelectionCaret = { fg = "rose" },
+  --       TelescopeSelection = { fg = "text", bg = "overlay", bold = true },
+  --       TelescopePromptPrefix = { bg = "surface", fg = "rose" },
+  --       TelescopePromptNormal = { bg = "surface" },
+  --       TelescopePromptBorder = { bg = "surface", fg = "surface" },
+  --       TelescopePromptTitle = { bg = "rose", fg = "surface" },
+  --       TelescopePreviewNormal = { bg = "overlay" },
+  --       TelescopePreviewBorder = { bg = "overlay", fg = "overlay" },
+  --       TelescopePreviewTitle = { bg = "pine", fg = "surface" },
+  --       TelescopeResultsNormal = { bg = "surface" },
+  --       TelescopeResultsBorder = { bg = "surface", fg = "surface" },
+  --       TelescopeResultsTitle = { fg = "surface" },
+  --
+  --       NavicNormal = { bg = "highlight_high" },
+  --       NavbuddyNormalFloat = { fg = "text", bg = "subtle" },
+  --       CmpNormal = { fg = "text", bg = "surface" },
+  --     },
+  --   })
+  --   vim.cmd("colorscheme rose-pine")
+  -- end,
+}
