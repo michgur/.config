@@ -1,6 +1,6 @@
 -- system copy / paste
 vim.keymap.set({ "n", "v" }, "<Leader>y", '"+y', { desc = "[y]ank to system clipboard" })
-vim.keymap.set({ "n", "v" }, "<Leader>Y", '"+Y', { desc = "[Y]ank to system clipboard" })
+vim.keymap.set({ "n", "v" }, "<Leader>Y", '"+y$', { desc = "[Y]ank to system clipboard" })
 vim.keymap.set({ "n", "v" }, "<Leader>p", '"+p', { desc = "[p]aste from system clipboard" })
 vim.keymap.set({ "n", "v" }, "<Leader>P", '"+P', { desc = "[P]aste from system clipboard" })
 
