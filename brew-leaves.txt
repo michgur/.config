@@ -22,3 +22,7 @@ hiddenbar
 maccy
 mactex-no-gui
 wezterm
+arc
+hammerspoon
+whatsapp
+raycast
