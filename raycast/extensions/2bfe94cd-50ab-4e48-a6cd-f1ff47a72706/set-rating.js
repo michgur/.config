@@ -59,6 +59,13 @@ tell application "Music"
 end tell
 `),Tv=t=>(0,Rt.pipe)(ea,tt.chain(r=>(0,Rt.pipe)(Fu(t,r),Mt,tt.orElse(e=>(console.error(e),(0,Rt.pipe)(Fu(t,"source 1"),Mt)))))),Sv=()=>{let t=Nt({id:"trackId",name:"trackName",artist:"trackArtist",album:"trackAlbum",duration:"trackDuration",rating:"trackRating"});return(0,Rt.pipe)(Mt(`
       set output to ""
+      tell application "System Events"
+        set isNotRunning to (count of (every process whose name is "Music")) = 0
+      end tell
+
+      if isNotRunning then
+        error
+      else
         tell application "Music"
           set t to (get current track)
           set trackId to id of t
@@ -70,6 +77,8 @@ end tell
 
           set output to ${t}
         end tell
+      end if
+
       return output
     `),tt.map(Xn()))},Mv=()=>{let t=Nt({name:"tName",artist:"tArtist",album:"tAlbum",playlist:"tPlaylist"});return(0,Rt.pipe)(Mt(`
       set output to ""

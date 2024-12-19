@@ -60,6 +60,13 @@ tell application "Music"
 end tell
 `),FR=t=>(0,Ut.pipe)(On,lt.chain(r=>(0,Ut.pipe)(tf(t,r),xt,lt.orElse(e=>(console.error(e),(0,Ut.pipe)(tf(t,"source 1"),xt)))))),qR=()=>{let t=Xt({id:"trackId",name:"trackName",artist:"trackArtist",album:"trackAlbum",duration:"trackDuration",rating:"trackRating"});return(0,Ut.pipe)(xt(`
       set output to ""
+      tell application "System Events"
+        set isNotRunning to (count of (every process whose name is "Music")) = 0
+      end tell
+
+      if isNotRunning then
+        error
+      else
         tell application "Music"
           set t to (get current track)
           set trackId to id of t
@@ -71,6 +78,8 @@ end tell
 
           set output to ${t}
         end tell
+      end if
+
       return output
     `),lt.map(ve()))},xR=()=>{let t=Xt({name:"tName",artist:"tArtist",album:"tAlbum",playlist:"tPlaylist"});return(0,Ut.pipe)(xt(`
       set output to ""

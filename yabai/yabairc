@@ -1,5 +1,5 @@
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-yabai -m signal --add event=space_changed action="hs -c \"spaceChanged()\""
+yabai -m signal --add event=space_changed action="hs -c \"SpaceChanged()\""
 sudo yabai --load-sa
 
 yabai -m config mouse_follows_focus        off            \
@@ -22,6 +22,7 @@ yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 yabai -m rule --add title="TinyPdfViewer" manage=on
+yabai -m rule --add title="Settings" manage=off
 
 yabai -m config layout bsp
 
