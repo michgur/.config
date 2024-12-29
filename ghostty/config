@@ -1,0 +1,15 @@
+theme = light:fix-catppuccin-latte,dark:fix-catppuccin-macchiato
+
+font-size = 17
+adjust-cell-height = 30%
+adjust-cursor-height = 30%
+adjust-cursor-thickness = 2
+adjust-underline-position = 9
+adjust-underline-thickness = 1
+
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+
+window-padding-y = 0
+window-padding-balance = true
+window-padding-color = extend

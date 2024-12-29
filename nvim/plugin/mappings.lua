@@ -49,18 +49,6 @@ vim.keymap.set("v", "<M-J>", multiline_dup_down, {})
 vim.keymap.set("n", "<M-K>", "<cmd>t .-1<CR>", {})
 vim.keymap.set("v", "<M-K>", multiline_dup_up, {})
 
-local function to_visual_line_mode()
-	local s = vim.fn.getpos("v")
-	local e = vim.fn.getpos(".")
-
-	vim.cmd("normal! :noh")
-	vim.api.nvim_win_set_cursor(0, { s[2], 0 })
-	vim.cmd("normal V")
-	vim.api.nvim_win_set_cursor(0, { e[2], 0 })
-end
--- go to Visual Line mode
-vim.keymap.set("v", "gV", to_visual_line_mode, { desc = "Go to [V]isual Line mode" })
-
 -- add empty lines
 vim.keymap.set("n", "<M-O>", "O<Esc>j", {})
 vim.keymap.set("n", "<M-o>", "o<Esc>k", {})

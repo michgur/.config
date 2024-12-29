@@ -19,7 +19,7 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.laststatus = 3
 vim.opt.termsync = false
-vim.opt.guicursor = "n-c-sm:block,i-ci-ve:ver25,v-r-cr-o:hor20"
+vim.opt.guicursor = "n-c-sm:block,i-ci-ve:ver50,v-r-cr-o:hor20"
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
