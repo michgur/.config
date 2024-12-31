@@ -21,7 +21,7 @@ koekeishiya/formulae/yabai
 hiddenbar
 maccy
 mactex-no-gui
-wezterm
+ghostty
 arc
 hammerspoon
 whatsapp
