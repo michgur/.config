@@ -1,4 +1,5 @@
 return {
-  "neovim/nvim-lspconfig",
-  config = require("config.lsp").setup,
+	"neovim/nvim-lspconfig",
+	-- dependencies = { "saghen/blink.cmp" },
+	config = require("config.lsp").setup,
 }

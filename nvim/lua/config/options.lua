@@ -19,6 +19,7 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.laststatus = 3
 vim.opt.termsync = false
+vim.opt.wrap = false
 vim.opt.guicursor = "n-c-sm:block,i-ci-ve:ver50,v-r-cr-o:hor20"
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
@@ -29,4 +30,21 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
 		vim.highlight.on_yank()
 	end,
+})
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+	desc = "Restore cursor to file position in previous editing session",
+	callback = function(args)
+		local mark = vim.api.nvim_buf_get_mark(args.buf, '"')
+		local line_count = vim.api.nvim_buf_line_count(args.buf)
+		if mark[1] > 0 and mark[1] <= line_count then
+			vim.cmd('normal! g`"zz')
+		end
+	end,
+})
+
+vim.filetype.add({
+	extension = {
+		["http"] = "http",
+	},
 })

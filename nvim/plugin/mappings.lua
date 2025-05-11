@@ -11,7 +11,7 @@ vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower win
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
 -- fix go to file start
-vim.keymap.set({ "n", "x" }, "gg", "gg0", {})
+vim.keymap.set({ "n", "x" }, "gg", "gg0", { desc = "Go to file start" })
 
 local function multiline_dup_up()
 	local s = vim.fn.getpos("v")
@@ -43,15 +43,15 @@ local function multiline_dup_down()
 	vim.api.nvim_win_set_cursor(0, { 2 * ep - sp + 1, 0 })
 end
 
--- move / duplicate lines
-vim.keymap.set("n", "<M-J>", "<cmd>t .<CR>", {})
-vim.keymap.set("v", "<M-J>", multiline_dup_down, {})
-vim.keymap.set("n", "<M-K>", "<cmd>t .-1<CR>", {})
-vim.keymap.set("v", "<M-K>", multiline_dup_up, {})
+-- duplicate lines
+vim.keymap.set("n", "<M-J>", "<cmd>t .<CR>", { desc = "Duplicate the current line below" })
+vim.keymap.set("v", "<M-J>", multiline_dup_down, { desc = "Duplicate the selected lines below" })
+vim.keymap.set("n", "<M-K>", "<cmd>t .-1<CR>", { desc = "Duplicate the current line above" })
+vim.keymap.set("v", "<M-K>", multiline_dup_up, { desc = "Duplicate the selected lines above" })
 
 -- add empty lines
-vim.keymap.set("n", "<M-O>", "O<Esc>j", {})
-vim.keymap.set("n", "<M-o>", "o<Esc>k", {})
+vim.keymap.set("n", "<M-O>", "O<Esc>j", { desc = "Add empty line below" })
+vim.keymap.set("n", "<M-o>", "o<Esc>k", { desc = "Add empty line above" })
 
 -- navigation
 vim.keymap.set("n", "<C-u>", "<C-u>zz", {})
@@ -59,7 +59,10 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz", {})
 vim.keymap.set("n", "<C-o>", "<C-o>zz", {})
 vim.keymap.set("n", "<C-i>", "<C-i>zz", {})
 
-vim.keymap.set("n", "<C-z>", "<cmd>bd<CR>")
-vim.keymap.set("n", "<C-Z>", "<cmd>bd!<CR>")
+vim.keymap.set("n", "<leader>x", "<cmd>bd<CR>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>X", "<cmd>bd!<CR>", { desc = "Force close current buffer" })
 
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [e]rror messages" })
+
+vim.keymap.set({ "n", "x", "o" }, "gh", "^zH", { desc = "Go to line start" })
+vim.keymap.set({ "n", "x", "o" }, "gl", "$", { desc = "Go to line end" })

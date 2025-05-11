@@ -18,6 +18,7 @@ return {
 		end,
 		integrations = {
 			cmp = true,
+			blink_cmp = true,
 			fzf = true,
 			dap = true,
 			native_lsp = {

@@ -16,6 +16,16 @@ return {
 			visual_line = false,
 			change_line = false,
 		},
+		surrounds = {
+			["<CR>"] = {
+				add = { { "", "" }, { "", "" } },
+				find = function()
+					local config = require("nvim-surround.config")
+					return config.get_selection({ motion = "ap" })
+				end,
+				delete = "^([^\n]*)()([^\n]*)()$",
+			},
+		},
 	},
 	keys = {
 		{

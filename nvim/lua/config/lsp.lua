@@ -5,11 +5,15 @@ local function setup_keymaps()
 		buffer = 0,
 		desc = "Go to [D]eclaration",
 	})
+	-- vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {
+	-- 	buffer = 0,
+	-- 	desc = "Go to [D]eclaration",
+	-- })
 	vim.keymap.set("n", "gd", vim.lsp.buf.definition, {
 		buffer = 0,
 		desc = "Go to [d]efinition",
 	})
-	vim.keymap.set("n", "gi", vim.lsp.buf.implementation, { buffer = 0, desc = "Go to [i]mplementation" })
+	vim.keymap.set("n", "gR", vim.lsp.buf.implementation, { buffer = 0, desc = "Go to implementation" })
 	vim.keymap.set("n", "gr", fzf.lsp_references, { buffer = 0, desc = "Go to [r]eferences" })
 	vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0, desc = "Show [K]ind of symbol" })
 	vim.keymap.set("n", "cd", vim.lsp.buf.rename, { buffer = 0, desc = "Change [d]efinition (i.e. rename symbol)" })
@@ -23,18 +27,35 @@ return {
 	setup = function()
 		local lspconfig = require("lspconfig")
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
+		-- local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-		lspconfig.util.default_config.on_attach = setup_keymaps
-		lspconfig.util.default_config.capabilities = capabilities
+		lspconfig.util.default_config = vim.tbl_deep_extend("force", lspconfig.util.default_config, {
+			on_attach = setup_keymaps,
+			capabilities = capabilities,
+		})
 
 		lspconfig.lua_ls.setup({})
+		lspconfig.html.setup({})
+		lspconfig.cssls.setup({})
+		lspconfig.tailwindcss.setup({})
+		lspconfig.ts_ls.setup({})
 		lspconfig.ruff.setup({
-			init_options = {
-				settings = { args = { "--ignore=F405,F403" } },
-			},
+			on_attach = function(client)
+				client.server_capabilities.hoverProvider = false
+				client.server_capabilities.diagnosticProvider = false
+			end,
 		})
 		lspconfig.pyright.setup({
-			on_attach = function() end,
+			settings = {
+				pyright = {
+					disableOrganizeImports = true,
+				},
+				python = {
+					analysis = {
+						typeCheckingMode = "standard",
+					},
+				},
+			},
 		})
 		lspconfig.zls.setup({
 			settings = {

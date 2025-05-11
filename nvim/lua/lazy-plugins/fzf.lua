@@ -4,6 +4,11 @@ return {
 		local fzf = require("fzf-lua")
 		-- calling `setup` is optional for customization
 		fzf.setup({
+			keymap = {
+				fzf = {
+					["ctrl-q"] = "select-all+accept",
+				},
+			},
 			fzf_colors = {
 				["fg"] = { "fg", "CursorLine" },
 				["bg"] = { "bg", "Normal" },
@@ -27,5 +32,6 @@ return {
 		vim.keymap.set("n", "<Leader>d", fzf.diagnostics_document, { desc = "Search file [d]iagnostics" })
 		vim.keymap.set("n", "<Leader>.", fzf.oldfiles, { desc = "Search old files [.]" })
 		vim.keymap.set("n", "<Leader> ", fzf.buffers, { desc = "Search buffers [ ]" })
+		vim.keymap.set("n", "<Leader>k", fzf.keymaps, { desc = "Search [k]eymaps" })
 	end,
 }
