@@ -10,19 +10,21 @@ fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-export PATH="/Users/michaelgur/Library/Python/3.9/bin:$PATH"
-export PATH="$HOME/go/bin:$PATH"
-
 export ICLOUD="$HOME/Library/Mobile Documents/com~apple~CloudDocs"
-export STUDIES="$ICLOUD/לימודים/העברית/2025א"
+export STUDIES="$ICLOUD/לימודים/העברית/2025ב"
 
 bindkey -v
-source $HOMEBREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+source /opt/homebrew/opt/fzf/shell/key-bindings.zsh
+source /opt/homebrew/opt/fzf/shell/completion.zsh
+source /opt/homebrew/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
-# if in ZED, don't use p10k
-if [ -z "$ZED" ]; then
-  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-  # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-  [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-fi
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 export CLICOLOR=1
+
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd () {
+  bindkey '^R' fzf-history-widget
+}
