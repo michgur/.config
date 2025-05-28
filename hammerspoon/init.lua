@@ -44,6 +44,24 @@ Swipe:start(config.fingers, function(direction, distance, id)
 	end
 end)
 
+BindLeaderKey = hs.eventtap
+	.new({
+		hs.eventtap.event.types.flagsChanged,
+	}, function(ev)
+		local flags = ev:rawFlags()
+		if
+			(flags & hs.eventtap.event.rawFlagMasks["deviceRightCommand"] ~= 0)
+			and (flags & hs.eventtap.event.rawFlagMasks["deviceLeftCommand"] ~= 0)
+		then
+			hs.eventtap.keyStroke({ "fn" }, "f15")
+		end
+	end)
+	:start()
+
+hs.urlevent.bind("maximizeWindow", function()
+	hs.window.focusedWindow():maximize()
+end)
+
 hs.hotkey.bind({ "cmd", "alt" }, "r", function()
 	hs.reload()
 end)

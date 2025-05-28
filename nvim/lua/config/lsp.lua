@@ -38,7 +38,33 @@ return {
 		lspconfig.html.setup({})
 		lspconfig.cssls.setup({})
 		lspconfig.tailwindcss.setup({})
-		lspconfig.ts_ls.setup({})
+		lspconfig.ts_ls.setup({
+			init_options = {
+				plugins = {
+					{
+						name = "@vue/typescript-plugin",
+						location = "/opt/homebrew/lib/node_modules/@vue/language-server/",
+						languages = { "vue" },
+					},
+				},
+			},
+			filetypes = {
+				"javascript",
+				"javascriptreact",
+				"javascript.jsx",
+				"typescript",
+				"typescriptreact",
+				"typescript.tsx",
+				"vue",
+			},
+		})
+		lspconfig.volar.setup({
+			init_options = {
+				typescript = {
+					tsdk = "/opt/homebrew/lib/node_modules/typescript/lib",
+				},
+			},
+		})
 		lspconfig.ruff.setup({
 			on_attach = function(client)
 				client.server_capabilities.hoverProvider = false

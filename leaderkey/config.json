@@ -1,0 +1,25 @@
+{
+  "actions" : [
+    {
+      "actions" : [
+        {
+          "iconPath" : "square.resize.up",
+          "key" : "f",
+          "label" : "Fill",
+          "type" : "url",
+          "value" : "hammerspoon://maximizeWindow"
+        }
+      ],
+      "iconPath" : "macwindow",
+      "key" : "w",
+      "label" : "Window",
+      "type" : "group"
+    },
+    {
+      "key" : ";",
+      "type" : "command",
+      "value" : "/opt/homebrew/bin/aerospace mode service"
+    }
+  ],
+  "type" : "group"
+}
