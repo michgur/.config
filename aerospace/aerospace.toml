@@ -98,8 +98,6 @@ automatically-unhide-macos-hidden-apps = false
     # '''
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    # alt-slash = 'layout tiles horizontal vertical'
-    # alt-comma = 'layout accordion horizontal vertical'
 
     ctrl-h = 'focus left'
     ctrl-j = 'focus down'
@@ -146,9 +144,6 @@ run = [
     f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
     backspace = ['close-all-windows-but-current', 'mode main']
 
-    # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
-    #s = ['layout sticky tiling', 'mode main']
-
     ctrl-shift-h = ['join-with left', 'mode main']
     ctrl-shift-j = ['join-with down', 'mode main']
     ctrl-shift-k = ['join-with up', 'mode main']
@@ -157,7 +152,6 @@ run = [
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
-
      
     slash = 'layout tiles horizontal vertical'
     comma = 'layout accordion horizontal vertical'

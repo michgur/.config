@@ -1,3 +1,87 @@
+tmux show -g | cat > ~/.config/tmux/.tmux.conf\
+
+tmux
+echo Hello
+cat .config/zsh/.zsh_history| rg Hello
+cat .config/zsh/.zsh_history | rg Hello
+cat .config/zsh/.zsh_history | rg He
+cat .config/zsh/.zsh_history | rg echo
+echo $POOP | rg "p"
+cat .config/zsh/.zsh_history
+tmux a
+tmux a
+tmux a
+ps
+ps -em
+ps -em | rg tmux
+clear
+brew update tmux
+brew upgrade tmux
+tmux
+tmux
+man tmux new-session
+npm i -D tailwind-scrollbar
+tmux a
+./dev.sh
+tmux a
+ls .Trash
+ls .Trash -s
+ls .Trash -a
+ls -a .Trash 
+ls -a .Trash | rg zsh
+cat .Trash/.zsh_history
+cat .zsh_history
+mv .Trash/.zsh_history .config/zsh/.zsh_history
+cat .config/zsh/.zsh_history
+clear
+nvim
+nvim
+cd Code/ringo
+clera
+clear
+./dev.sh
+nvim dev.sh
+tmux a
+tmux a
+tmux kill-session
+cd Code/ringo
+nvim
+npm uninstall tailwind-scrollbar
+cd Code/ringo
+sudo dev.sh
+./dev.sh
+source .venv/bin/activate
+clear
+nvim
+tmux a
+tmux kill-session
+btom
+btop
+git add .
+brew leaves > brew-leaves.txt
+brew leaves
+brew list
+brew leaves help
+brew leaves -r
+brew leaves -r > brew-leaves.txt
+brew casks
+brew list --casks
+brew list --casks -1
+brew list --casks -1 >> brew-leaves.txt
+git commit -m "may25"
+git push
+git status
+git add .
+git commit -m "leaves"
+git push
+git status
+git fetch
+git pull
+cd .config
+brew leaves
+brew leaves > brew-leaves.txt
+git commit -m "leaves"
+git add .
 git rm --cached hammerspoon
 rm -rf ./*
 git pull
@@ -799,344 +883,222 @@ git remote add origin https://github.com/michgur/vibe-studio.git
 git push origin
 git push --set-upstream origin main
 clear
-cd ../.config
-git pull
-git stash
-git pull
-clear
-cd ../.config
-./setup.sh
-brew install leaderkey ice
-brew install leader-key ice
-fg
-brew install leader-key
-brew install ice
-brew uninstall hidden-bar
-brew uninstall hiddenbar
-nvim
-npm run server
-cd vibe-studio
-npm run client
-npm i -g vite
-npm i -g @vue/language-server
-npm run client
-nvim
-nvim
-npm i -g typescript-language-server
-npm i -g tailwind-language-server
-npm i -g @tailwindcss/language-server
-npm run client
-npm i -g vite
-npm run client
-npx vite
-ls -a
-npm i -D vite
-npx vite
-npm run client
-npm run client
-cd Code
-gh
-gh repo clone
-gh repo clone vibe-studio
-brew upgrade
-fg
-brew upgrade
-brew install ice
-brew uninstall ice
-brew install --cask jordanbaird-ice
-npm i -g typescript
-npm i -g typescript-language-server
-git add .
-git status
-git commit -m ""
-git commit -m "e"
-git push
-npm install @alenaksu/json-viewer
-npm uninstall json-viewer
-npm list
-npm install  @matpool/vue-json-view\
-\
-
-$ npm install vue-json-pretty
-npm install vue-json-pretty
-npm uninstall @matpool/vue-json-view
-npm i  json-tree-view-vue3
-npm uninstall json-tree-view-vue3
-npm install @andypf/json-viewer\
-
-npm uninstall @andypf/json-viewer\
-
-npm list
-npm uninstall json-viewer
-npm list
-npm uninstall @alenaksu/json-viewer
-npm list
-npm uninstall vue-json-pretty
-npm i vite-plugin-monaco-editor monaco-editor
-npm i vuedraggable
-npm uninstall vuedraggable
-npm i vuedraggable@next
-npm i body-parser
-npm run client
-npm run client
-npm run client
-npm run client
-npm run client
-npm run client
-npm list
-npm i -D vite-plugin-monaco-editor
-clear
-npm i -D vite-plugin-monaco-editor
-npm run client
-npm run client
-npm run client
-npm run client
-npm run client
-npm run server
-cd Code/vibe-studio
-clear
-nvim
-nvim
-npm i -D @types/vuedraggable
-npm uninstall @types/vuedraggable
-npm i -D @types/vuedraggable.next
-npm i -D @types/vuedraggable@next
-npm i -D @types/sortablejs
-npm add @tanstack/table-core @tanstack/vue-table
-cd Code/vibe-studio
-cat client/components/ReportBuilder.vue
-cat client/components/ReportBuilder.vue
-git add .
-git commit -m "w1"
-git push
-npm run client
-npm run client
-npm run client
-npm run client
-npm run client
-npm run client
-npm run client
-clear
-npm run client
-npm run client
-npm run server
-nvim
-git status
-brew install ruff
-ls /System/Library/Fonts/Apple\ Color\ Emoji.ttc
-source .venv/bin/activate
-cd project
-clear
-cat reddit-amazon-emoji-only.csv
-python avg_rating.py
-python avg_rating.py
-python avg_rating.py
-python reddit_amazon_dataset.py
-python avg_rating.py
-python avg_rating.py
-python
-python avg_rating.py
-python avg_rating.py
-python avg_rating.py
-python avg_rating.py
-clear
-python avg_rating.py
-python avg_rating.py
-pip install matplotliv
-pip install matplotlib
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-findfond
-findfont
-ls /System/Library/Fonts/Apple\ Color\ Emoji.ttc
-findfont
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-pip install plotly pandas
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python emoji_test.py
-python avg_rating.py
-python avg_rating.py
-python avg_rating.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python plot_emoji_ratings.py
-python reddit_amazon_dataset.py
-python reddit_amazon_dataset.py
-python reddit_amazon_dataset.py
-python reddit_amazon_dataset.py
-python reddit_amazon_dataset.py
-python reddit_amazon_dataset.py
-python reddit_amazon_dataset.py
-python reddit_amazon_dataset.py
-brew list
-brew uninstall --cask zen
-clear
-python reddit_amazon_dataset.py
-npm i @vueuse/core
-npm run server
-npm run client
-cd $STUDIES/needle/needle-in-a-data-haystack-noa-michael
-source .venv/bin/activate
-clear
-cd project
-nvim
-nvim
-cd ~/Code
-git pull
-cd vibe-studio
-git pull
-clear
-nvim
-git add . && git commit -m "improvements"
-git push
-git push
-source ../.venv/bin/activate
-python plot_sentiment_heatmap.py
-python plot_sentiment_heatmap.py
-python plot_sentiment_heatmap.py
-python counts.py
-python counts.py
-python counts.py
-python counts.py
-python counts.py
-python counts.py
-python counts.py
-python counts.py
-python plot_emoji_ratings.py
-python counts.py
-python counts.py
-python plot_sentiment_pies.py
-python plot_sentiment_pies.py
-python plot_sentiment_pies.py
-python plot_sentiment_pies.py
-python plot_sentiment_pies.py
-python plot_sentiment_pies.py
-python plot_sentiment_pies.py
-python plot_sentiment_pies.py
-python plot_sentiment_pies.py
-python plot_sentiment_bars.py
-python plot_sentiment_heatmap.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-python plot_sentiment_bars.py
-cd $STUDIES/needle/needle-in-a-data-haystack-noa-michael
-source .venv/bin/activate
-cd project
-nvim
-nvim .config/aerospace/aerospace.toml
-git pull
 cd .config
-git pull
-git stash
-git pull
-nvim ~/.config/aerospace/aerospace.toml
-brew install orion
-brew uninstall orion
-brew install zen
-apw
-apw -h
-apw pw
-apw auth
-apw auth
-brew uninstall --zap apw
-apw
-brew help
-brew prune
-/usr/bin/security 2>&1 >/dev/null find-generic-password
-/usr/bin/security 2>&1 >/dev/null find-generic-password -gs '2fa pin'
-/usr/bin/security
-/usr/bin/security list-keychains
-/usr/bin/security | rg list
-security dump-keychain
-security dump-keychain | rg n8n
-security dump-keychain | rg "google"
-security dump-keychain | grep -B5 -A5 "google"
-security dump-keychain -s "accounts.google.com"
-security -d dump-keychain
-security  dump-keychain -d
-security dump-keychain 
-security find-interne
-security find-interne --help
-security find-internet-password -s "google.com"
-security find-internet-password -s "accounts.google.com"
-security find-internet-password -d "accounts.google.com"
-security find-internet-password -a "accounts.google.com"
-security find-internet-password "accounts.google.com"
-security find-internet-password "n8n"
-/Library/Google/Chrome/NativeMessagingHosts/com.apple.passwordmanager.json
-cat /Library/Google/Chrome/NativeMessagingHosts/com.apple.passwordmanager.json
-/System/Cryptexes/App/System/Library/CoreServices/PasswordManagerBrowserExtensionHelper.app/Contents/MacOS/PasswordManagerBrowserExtensionHelper
-/System/Cryptexes/App/System/Library/CoreServices/PasswordManagerBrowserExtensionHelper.app/Contents/MacOS/PasswordManagerBrowserExtensionHelper &
-brew install bendews/homebrew-tap/apw
+git add .
+git commit -m "may 28"
+git push
+git show HEAD
 clear
+git push
+nvim zsh/.zsh_history
+git add . 
+git commit -m "rmv sec"
+git commit --ammend
+git commit --ammend --no-edit
+git HEAD
+pbpaste | sed s/\n/BBB/g
+pbpaste | sed s/\n/\n/g
+pbpaste | sed s/\n/0/g | tr '0' '\n'
+pbpaste | sed s/\\n/0/g | tr '0' '\n'
+pbpaste | sed s/\n/0/g 
+pbpaste | sed s/\\n/0/g 
+pbpaste | sed s/\\\\n/0/g 
+pbpaste | sed s/\\\\n/0/g | tr '0' '\n'
+pbpaste | sed s/\\\\n/0/g | tr '0' '\n' | pbcopy
+git show HEAD
+git reset --soft HEAD~1
+nvim
+git commit --ammend --no-edit
+git commit --amend --no-edit
+git push
+clear
+pbpaste | jq | pbcopy
+nvim
+cd ~/Pictures/website\ garbage
+nvim ios_phone.svg
+npm i vueuse
+npm i @vueuse/core
+clear
+cd Code/vibe-studio
+nvim
+nvim
+nvim
+git pull
+npm run client
+npm i vite-plugin-moncao-editor
+npm i vite-plugin-monaco-editor
+clear
+npm run client
+npm run client
+npm run server
+cat counts.csv
+mv counts.csv project/counts
+clear
+cd $STUDIES/needle
+ls -a
+ls -a ex1
+ls needle-in-a-data-haystack-noa-michael
+ls -a
+tree
+tree | rg env
+clear
+tree -a
+tree -a | rg env
+cd needle-in-a-data-haystack-noa-michael
+ls -a
+source .venv/bin/activate
+clear
+nvim
+source .venv/bin/activate
+cd project
+python reddit_amazon_dataset.py
+brew install --cask sigmaos
+cd ~/Code/vibe-studio
+git add .
+git commit -m "h"
+git push
+clear
+brew install --cask orion
+brew uninstall orion
+clear
+cd project
+python reddit_amazon_dataset.py
+source ../.venv/bin/activate
+python reddit_amazon_dataset.py
+python reddit_amazon_dataset.py
+python reddit_amazon_dataset.py
+python reddit_amazon_dataset.py
+python plot_emoji_ratings.py
+pip install kaleido
+python plot_emoji_ratings.py
+brew install kaleido
+clear
+python plot_emoji_ratings.py
+ls ../.venv/lib/python3.13/site-packages/kaleido/executable/kaleido/
+../.venv/lib/python3.13/site-packages/kaleido/executable/kaleido
+cd ..
+python project/plot_emoji_ratings.py
+k
+python project/plot_emoji_ratings.py
+source .venv/bin/activate
+python project/plot_emoji_ratings.py
+python project/plot_emoji_ratings.py
+python project/plot_emoji_ratings.py
+python project/sentiments.py
+python project/plot_emoji_ratings.py
+source .venv/bin/activate
+pip install huggingface
+pip install datasets
+python project/test.py
+python project/test.py
+python project/test.py
+python project/test.py
+pip install emoji
+pip install emoji
+python project/test.py
+python project/test.py
+python project/test.py
+mv ~/Downloads/movies.csv ./project
+python project/test.py
+python project/test.py
+python project/test.py
+python project/test.py
+python project/test.py
+python project/test.py
+pip install praw
+python project/test.py
+python project/scraper.py
+python project/scraper.py
+python project/scraper.py
+python project/scraper.py
+python project/scraper.py
+python project/scraper.py
+python project/reddit_dataset.py
+python project/reddit_dataset.py
+python project/reddit_dataset.py
+python project/reddit_dataset.py
+python project/reddit_dataset.py
+python project/reddit_dataset.py
+python
+clear
+python project/reddit_amazon_dataset.py
+python project/reddit_amazon_dataset.py
+python project/reddit_amazon_dataset.py
+python project/reddit_amazon_dataset.py
+python project/reddit_amazon_dataset.py
+nvim
+cat sentiment-analysis-word-lists-dataset/negative-words3.txt
+cat sentiment-analysis-word-lists-dataset/negative-words3.txt
+curl -L -o ~/Downloads/sentiment-analysis-word-lists-dataset.zip\\
+  https://www.kaggle.com/api/v1/datasets/download/prajwalkanade/sentiment-analysis-word-lists-dataset
+ls
+ls -a
+cd $STUDIES/needle/needle-in-a-data-haystack-noa-michael
+source .venv
+source .venv/bin/activate
+cd project
+mv ~/Downloads/sentiment-analysis-word-lists-dataset.zip .
+open sentiment
+open sentiment-analysis-word-lists-dataset.zip
+nvim
+source ../.venv/bin/activate
+ls
+python sentiment
+python sentiments.py
+python sentiments.py
+cat sentiment-analysis-word-lists-dataset/positive-words.txt
+python sentiments.py
+python sentiments.py
+python
+python sentiments.py
+python
+cat sentiment-analysis-word-lists-dataset/negative-words.txt
+cat sentiment-analysis-word-lists-dataset/negative-words.txt >> sentiment-analysis-word-lists-dataset/negative-words2.txt
+cat sentiment-analysis-word-lists-dataset/negative-words2.txt
+python
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+cat reddit-amazon-emoji-only.csv
+clear
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python sentiments.py
+python plot_emoji_ratings.py
+k
+python plot_emoji_ratings.py
+python plot_emoji_ratings.py
+python plot_emoji_ratings.py
+python plot_emoji_ratings.py
+python plot_emoji_ratings.py
+python plot_emoji_ratings.py
+python plot_sentiment_bars.py
+python plot_sentiment_bars.py
+python plot_sentiment_heatmap.py
+python plot_sentiment_pies.py
+python plot_sentiment_pies.py
+python plot_sentiment_heatmap.py
+/Users/michaelgur/Code/swifttest/.build/arm64-apple-macosx/debug/swifttest ; exit;
