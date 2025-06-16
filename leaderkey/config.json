@@ -16,9 +16,88 @@
       "type" : "group"
     },
     {
+      "iconPath" : "/Applications/AeroSpace.app",
       "key" : ";",
+      "label" : "Aerospace Service",
       "type" : "command",
       "value" : "/opt/homebrew/bin/aerospace mode service"
+    },
+    {
+      "key" : "q",
+      "type" : "application",
+      "value" : "/System/Applications/Stickies.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+        },
+        {
+          "key" : "g",
+          "type" : "application",
+          "value" : "/Applications/Ghostty.app"
+        },
+        {
+          "key" : "w",
+          "type" : "application",
+          "value" : "/Applications/WhatsApp.app"
+        },
+        {
+          "key" : "l",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "f",
+          "type" : "application",
+          "value" : "/Applications/Figma.app"
+        },
+        {
+          "key" : "h",
+          "type" : "application",
+          "value" : "/Applications/Hammerspoon.app"
+        },
+        {
+          "key" : "r",
+          "type" : "application",
+          "value" : "/System/Applications/Reminders.app"
+        }
+      ],
+      "iconPath" : "square.grid.3x3.topmiddle.filled",
+      "key" : "o",
+      "label" : "Open",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "iconPath" : "/Applications/Raycast.app",
+          "key" : "f",
+          "label" : "Files",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/file-search/search-files"
+        },
+        {
+          "iconPath" : "/Applications/Raycast.app",
+          "key" : "m",
+          "label" : "Menu Items",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/navigation/search-menu-items"
+        },
+        {
+          "iconPath" : "/Applications/Raycast.app",
+          "key" : "e",
+          "label" : "Emojis",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols"
+        }
+      ],
+      "iconPath" : "magnifyingglass",
+      "key" : "s",
+      "label" : "Search",
+      "type" : "group"
     }
   ],
   "type" : "group"
